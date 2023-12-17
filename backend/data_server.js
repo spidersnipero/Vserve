@@ -5,7 +5,7 @@ const dotenv = require("dotenv");
 const port = process.env.PORT || 3001;
 dotenv.config();
 
-const authenticateToken = require("./routes/auth/authenticate");
+const authenticateToken = require("./middleware/authenticate");
 
 const addRouter = require("./routes/doc/add");
 const getRouter = require("./routes/doc/get");

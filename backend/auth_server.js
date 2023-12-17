@@ -9,7 +9,7 @@ const signinRouter = require("./routes/auth/signin");
 const tokenRouter = require("./routes/auth/token");
 const signoutRouter = require("./routes/auth/signout");
 
-const authenticateToken = require("./routes/auth/authenticate");
+const authenticateToken = require("./middleware/authenticate");
 const connectToDB = require("./db/connect_to_db");
 
 connectToDB("aj");

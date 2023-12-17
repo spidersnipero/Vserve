@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const createGenericModel = require("../../models/genericModel");
-const authenticateToken = require("../auth/authenticate.js");
+const authenticateToken = require("../../middleware/authenticate");
 
 router.post("/setData", authenticateToken, async (req, res) => {
   const database = req.body.database;
