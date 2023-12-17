@@ -1,0 +1,12 @@
+GET http://localhost:3001/
+
+###
+POST http://localhost:3001/auth/signup
+Content-Type: application/json
+
+{
+    "email": "me@gmail.com",
+    "password": "trustme"
+}
+
+  
